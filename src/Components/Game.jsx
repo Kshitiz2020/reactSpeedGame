@@ -4,7 +4,7 @@ function Game({ score, circles, stopHandler, clickHandler, current }) {
   return (
     <div>
       <p>{score}</p>
-      <div>
+      <div className="circles">
         {circles.map((_, i) => (
           <Circle
             key={i}

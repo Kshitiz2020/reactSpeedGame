@@ -8,11 +8,7 @@ function GameOver({ closeHandler, name, score, level }) {
           <p className="score">{score}</p>
           <p>{level}</p>
         </div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-          perferendis eaque repellat, magnam error vero debitis necessitatibus
-          fugit ut a?
-        </p>
+        <p>Practice more</p>
         <button onClick={closeHandler}>X</button>
       </div>
     </div>

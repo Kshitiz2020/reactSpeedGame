@@ -14,7 +14,7 @@
 body {
   background-image: url("../assets/snow.jpg");
   text-align: center;
-  font-family: "Nosifer";
+  font-family: "Times New Roman", Times, serif, "Nosifer";
   margin: 50px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,14 +36,13 @@ body {
   justify-content: center;
   background-color: rgba(255, 99, 71, 0.638);
   margin: 1rem;
-  /*  */
 }
 
 .circle.active {
   background-image: url("snowflake.jpg");
   background-size: cover;
 }
-.overlay {
+/* .overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -54,7 +53,7 @@ body {
   z-index: 1;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .modal {
   background-color: whitesmoke;
@@ -65,12 +64,14 @@ body {
 }
 
 #closeModal {
-  background-color: rgba(245, 245, 245, 0);
-  color: black;
-  padding: 2px;
-  margin-top: 20px;
+  background-color: green;
+  color: white;
+  /* padding: 2px; */
+  margin-top: 10px;
+  margin-left: 10px;
   cursor: pointer;
 }
+
 #closeModal:hover {
   background-color: red;
   cursor: pointer;
@@ -188,6 +189,7 @@ h2 {
   justify-items: center;
   align-items: center;
   color: #333;
+  z-index: 10;
 }
 
 .gameover_box {

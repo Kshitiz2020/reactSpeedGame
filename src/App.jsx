@@ -48,15 +48,15 @@ function App() {
   };
 
   const stopHandler = () => {
-    setGameOn(!gameOn);
-    setGameOver(!gameOver); // Explain this ! thing.
+    setGameOn((prevState) => !prevState);
+    setGameOver((prevState) => !prevState); // Explain this ! thing.
     clearTimeout(timeoutIdRef.current);
     timeoutIdRef.current = null;
   };
 
   const closeHandler = () => {
-    setGameOver(!gameOver);
-    setGameLaunch(!gameLaunch);
+    setGameOver((prevState) => !prevState);
+    setGameLaunch((prevState) => !prevState);
     setScore(0);
   };
 
@@ -70,7 +70,7 @@ function App() {
   };
 
   const randomNumb = () => {
-    if (rounds.current >= 3) {
+    if (rounds.current >= 100) {
       stopHandler();
       return;
     }
@@ -85,7 +85,7 @@ function App() {
 
     timeoutIdRef.current = setTimeout(randomNumb, pace);
     console.log(nextActive);
-    pace *= 0.95;
+    /* pace *= 0.95; */
   };
 
   return (
